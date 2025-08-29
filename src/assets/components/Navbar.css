@@ -1,0 +1,53 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #0d1117;
+}
+.navbar ul{
+    list-style: none;
+    gap: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+
+}
+.navbar ul li a{
+    font-size: 1.4rem;
+    color: silver;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+}
+hr {
+    width: 70%;
+    color: silver;
+    margin: 1rem auto;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        gap: 2rem;
+    }
+    .navbar ul li a{
+        font-size: 1.2rem;
+    }
+}
+.scroll-indicator {
+    height: 1.75px;
+    background: rgb(114, 127, 155);
+    border-radius: 10px; 
+}
+
+.navbar ul li a:hover{
+    text-decoration: underline;
+    color: white;
+}
+

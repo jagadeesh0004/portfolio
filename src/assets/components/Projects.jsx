@@ -28,8 +28,8 @@ const projectsData = [
     description:
       "A collection of classic web-based games including 2048 and Tic Tac Toe. Both games feature responsive layouts, interactive animations, and engaging gameplay logic. Players can enjoy them directly in the browser with smooth real-time interactions. Built entirely using HTML, CSS, and JavaScript for speed and compatibility.",
     img: webgames,
-    github: "https://github.com/jagadeesh0004/web-games",
-    demo: "https://web-games-demo.vercel.app/",
+    github: "https://github.com/jagadeesh0004/WEBGAMES",
+    demo: "https://jagadeesh0004.github.io/WEBGAMES/",
   },
   {
     title: "Study Sync Frontend Project",

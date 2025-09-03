@@ -60,10 +60,10 @@
 }
 
 .btn {
-  display: inline-flex;         
-  align-items: center;          
-  justify-content: center;     
-  gap: 0.5rem;               
+  display: inline-flex;
+  align-items: center;     
+  justify-content: center;
+  gap: 0.5rem;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-size: 1rem;
@@ -71,15 +71,17 @@
   text-decoration: none;
   transition: transform 0.2s ease, background 0.3s ease;
   cursor: pointer;
-  line-height: 1;              
+  line-height: 1.2;        
+  
 }
 
 .icon {
-  font-size: 1.2rem;            
-  flex-shrink: 0;           
-  display: inline-flex;          
-  align-items: center;       
+  font-size: 1.2rem;
+  vertical-align: middle;  
+  position: relative;
+  top: 0.05em;       
 }
+
 .btn:hover {
   transform: translateY(-2px); 
 }

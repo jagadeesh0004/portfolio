@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import CC from "../images/CC.png";
 import webgames from "../images/webgames.png";
 import studysync from "../images/studysync.png";
-import Clock from "../images/Clock.png";
+import leetcode from "../images/leetcode.png"
 const projectsData = [
   // {
   //   title: "Attendance Tracker",
@@ -22,6 +22,15 @@ const projectsData = [
   github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
   demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/Currency-Converter/",
 },
+  {
+  title: "LeetCode Stats Fetcher",
+  description:
+    "A web app that fetches and displays real-time LeetCode user statistics, including solved problems by difficulty, acceptance rate, and ranking. Features interactive visualizations with charts, responsive design, and error handling for invalid usernames. Built using React, Tailwind CSS, and Recharts.",
+  img: LeetCode,
+  demo: "https://jagadeesh0004.github.io/leetcode/", 
+  github: "https://github.com/jagadeesh0004/leetcode/",
+},
+
 
   {
     title: "Web Games (2048 & Tic Tac Toe)",
@@ -39,15 +48,6 @@ const projectsData = [
     demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/StudySync/",
     github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
   },
-  {
-    title: "Analog Clock",
-    description:
-      "A stylish analog clock built for the web, showing real-time updates with hour, minute, and second hands. The design mimics a physical clock with smooth transitions and precise movement. Fully responsive and adaptable for both desktop and mobile. Developed using HTML, CSS, and JavaScript without external libraries.",
-    img: Clock,
-    demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/CLOCK/",
-    github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
-  },
-];
 
 const Projects = () => {
   return (

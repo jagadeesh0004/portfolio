@@ -26,7 +26,7 @@ const projectsData = [
   title: "LeetCode Stats Fetcher",
   description:
     "A web app that fetches and displays real-time LeetCode user statistics, including solved problems by difficulty, acceptance rate, and ranking. Features interactive visualizations with charts, responsive design, and error handling for invalid usernames. Built using React, Tailwind CSS, and Recharts.",
-  img: LeetCode,
+  img: leetCode,
   demo: "https://jagadeesh0004.github.io/leetcode/", 
   github: "https://github.com/jagadeesh0004/leetcode/",
 },
@@ -48,6 +48,8 @@ const projectsData = [
     demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/StudySync/",
     github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
   },
+
+  ];
 
 const Projects = () => {
   return (

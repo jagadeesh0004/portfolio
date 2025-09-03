@@ -64,21 +64,22 @@ const Projects = () => {
               <p>{project.description}</p>
               <div className="project-links">
                 <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn github"
-                >
-                  <FaGithub className="icon" /> GitHub
-                </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn live"
-                >
-                  <FaExternalLinkAlt className="icon" /> Live
-                </a>
+  href={project.github}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn github"
+>
+  <FaGithub className="icon" /> GitHub
+</a>
+
+<a
+  href={project.demo}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn live"
+>
+  <FaExternalLinkAlt className="icon" /> Live
+</a>
               </div>
             </div>
           </div>

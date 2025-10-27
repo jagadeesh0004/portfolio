@@ -4,7 +4,8 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import CC from "../images/CC.png";
 import webgames from "../images/webgames.png";
 import studysync from "../images/studysync.png";
-import leetcode from "../images/leetcode.png"
+import leetcode from "../images/leetcode.png";
+import CA from "../images/chatapp.png";
 const projectsData = [
   // {
   //   title: "Attendance Tracker",
@@ -14,6 +15,14 @@ const projectsData = [
   //   github: "https://github.com/jagadeesh0004/attendance-tracker",
   //   demo: "https://attendance-tracker-demo.vercel.app/",
   // },
+  {
+  title: "Chat App",
+  description:
+    "A real-time chat application that enables users to join chat rooms and exchange messages instantly. Built with Node.js, Express, and Socket.io for reliable real-time communication, and a responsive front-end using HTML, CSS, and JavaScript. Features include user nicknames, multiple rooms, message timestamps, and basic input validation for a clean chatting experience.",
+  img: CA,
+  github: "https://github.com/jagadeesh0004/chatapp",
+  demo: "https://portfolio-gilt-mu-38.vercel.app/"
+},
   {
   title: "Currency Converter",
   description:

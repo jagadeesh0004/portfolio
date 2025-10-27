@@ -18,10 +18,10 @@ const projectsData = [
   {
   title: "Chat App",
   description:
-    "A real-time chat application that enables users to join chat rooms and exchange messages instantly. Built with Node.js, Express, and Socket.io for reliable real-time communication, and a responsive front-end using HTML, CSS, and JavaScript. Features include user nicknames, multiple rooms, message timestamps, and basic input validation for a clean chatting experience.",
+    "ChatApp is a lightweight real-time messaging application implemented primarily in JavaScript. The project demonstrates a pragmatic architecture that separates a React-based front end from a Node.js server, enabling responsive, real-time interactions suitable for small teams, demonstrations, or further product development.",
   img: CA,
   github: "https://github.com/jagadeesh0004/chatapp",
-  demo: "https://portfolio-gilt-mu-38.vercel.app/"
+  demo: "https://chatapp-c5nf.onrender.com"
 },
   {
   title: "Currency Converter",

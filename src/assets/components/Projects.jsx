@@ -5,7 +5,7 @@ import CC from "../images/CC.png";
 import webgames from "../images/webgames.png";
 import studysync from "../images/studysync.png";
 import leetcode from "../images/leetcode.png";
-import CA from "../images/chatapp.png";
+import CA from "../images/Screenshot 2025-10-27 104926.png";
 const projectsData = [
   // {
   //   title: "Attendance Tracker",

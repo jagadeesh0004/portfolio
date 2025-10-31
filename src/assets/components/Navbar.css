@@ -34,7 +34,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     .navbar ul {
-        gap: 2rem;
+        gap: 1.25rem;
     }
     .navbar ul li a{
         font-size: 1.2rem;

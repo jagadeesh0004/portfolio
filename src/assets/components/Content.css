@@ -10,9 +10,9 @@
 }
 
 .content h1{
-    font-size: 4rem;
+    font-size: 3.25rem;
     font-weight: 600;
-    margin-bottom: 1rem;
+    margin: 1.5rem auto 0.5rem auto;
 }
 
 .role{
@@ -58,25 +58,35 @@
     align-items: center;
 }
 .social a {
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
-    background-color: transparent;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.06);
+    transition: transform 0.18s ease, background-color 0.18s ease;
+    text-decoration: none;
+    color: inherit;
+}
+.social a:hover {
+    transform: translateY(-3px) scale(1.03);
+    background-color: rgba(255,255,255,0.12);
 }
 .socialimg {
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: white;
-    height: 3rem;
-    width: 3rem;
-    transition: transform 0.3s ease;
-}
-.socialimg:hover {
-    transform: scale(1.15);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 0;
+    color: white;
 }
 @media screen and (max-width: 600px) {
     .social {
-        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
         margin: 1rem auto;
+    }
+    .socialimg {
+        width: 27px;
+        height: 27px;
     }
 }

@@ -1,11 +1,10 @@
-import React from "react";
 import "./Projects.css";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import CC from "../images/CC.png";
 import webgames from "../images/webgames.png";
 import studysync from "../images/studysync.png";
 import leetcode from "../images/leetcode.png";
-import CA from "../images/Screenshot 2025-10-27 104926.png";
+import CA from "../images/chatty.png";
 const projectsData = [
   // {
   //   title: "Attendance Tracker",
@@ -16,30 +15,29 @@ const projectsData = [
   //   demo: "https://attendance-tracker-demo.vercel.app/",
   // },
   {
-  title: "Chat App",
-  description:
-    "ChatApp is a lightweight real-time messaging application implemented primarily in JavaScript. The project demonstrates a pragmatic architecture that separates a React-based front end from a Node.js server, enabling responsive, real-time interactions suitable for small teams, demonstrations, or further product development.",
-  img: CA,
-  github: "https://github.com/jagadeesh0004/chatapp",
-  demo: "https://chatapp-c5nf.onrender.com"
-},
+    title: "Chat App",
+    description:
+      "ChatApp is a lightweight real-time messaging application implemented primarily in JavaScript. The project demonstrates a pragmatic architecture that separates a React-based front end from a Node.js server, enabling responsive, real-time interactions suitable for small teams, demonstrations, or further product development.",
+    img: CA,
+    github: "https://github.com/jagadeesh0004/chatapp",
+    demo: "https://chatapp-c5nf.onrender.com",
+  },
   {
-  title: "Currency Converter",
-  description:
-    "A simple yet effective currency converter that provides real-time exchange rates using an open-source API. Users can quickly convert between multiple currencies with instant updates and accurate results. Designed with a clean and responsive UI for desktop and mobile devices. Built using HTML, CSS, JavaScript, and integrated with an external API for live rates.",
-  img: CC,
-  github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
-  demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/Currency-Converter/",
-},
+    title: "Currency Converter",
+    description:
+      "A simple yet effective currency converter that provides real-time exchange rates using an open-source API. Users can quickly convert between multiple currencies with instant updates and accurate results. Designed with a clean and responsive UI for desktop and mobile devices. Built using HTML, CSS, JavaScript, and integrated with an external API for live rates.",
+    img: CC,
+    github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
+    demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/Currency-Converter/",
+  },
   {
-  title: "LeetCode Stats Fetcher",
-  description:
-    "A web app that fetches and displays real-time LeetCode user statistics, including solved problems by difficulty, acceptance rate, and ranking. Features interactive visualizations with charts, responsive design, and error handling for invalid usernames. Built using React, Tailwind CSS, and Recharts.",
-  img: leetcode,
-  demo: "https://jagadeesh0004.github.io/leetcode/", 
-  github: "https://github.com/jagadeesh0004/leetcode/",
-},
-
+    title: "LeetCode Stats Fetcher",
+    description:
+      "A web app that fetches and displays real-time LeetCode user statistics, including solved problems by difficulty, acceptance rate, and ranking. Features interactive visualizations with charts, responsive design, and error handling for invalid usernames. Built using React, Tailwind CSS, and Recharts.",
+    img: leetcode,
+    demo: "https://jagadeesh0004.github.io/leetcode/",
+    github: "https://github.com/jagadeesh0004/leetcode/",
+  },
 
   {
     title: "Web Games (2048 & Tic Tac Toe)",
@@ -57,38 +55,42 @@ const projectsData = [
     demo: "https://jagadeesh0004.github.io/WEB-PROJECTS/StudySync/",
     github: "https://github.com/jagadeesh0004/WEB-PROJECTS",
   },
-
-  ];
+];
 
 const Projects = () => {
   return (
     <section className="projects" id="projects">
-      <h2>My Projects</h2>
+      <h2>My Projects 🚀</h2>
       <div className="projects-list">
         {projectsData.map((project, index) => (
           <div className="project-card" key={index}>
-            <img src={project.img} alt={project.title} className="project-img" />
+            <img
+              src={project.img}
+              alt={project.title}
+              className="project-img"
+              loading="lazy"
+            />
             <div className="project-content">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className="project-links">
                 <a
-  href={project.github}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn github"
->
-  <FaGithub className="icon" /> GitHub
-</a>
+                  href={project.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn github"
+                >
+                  <FaGithub className="icon" /> GitHub
+                </a>
 
-<a
-  href={project.demo}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="btn live"
->
-  <FaExternalLinkAlt className="icon" /> Live
-</a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn live"
+                >
+                  <FaExternalLinkAlt className="icon" /> Live
+                </a>
               </div>
             </div>
           </div>

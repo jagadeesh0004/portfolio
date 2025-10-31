@@ -47,19 +47,29 @@
   flex-wrap: wrap;
 }
 .social-links a {
-  display: inline-block;
-  background-color: transparent;
-}
-.socialimage {
-  padding: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background-color: white;
-  height: 2.5rem;
-  transition: transform 0.3s ease;
-  display: block;
+  background-color: rgba(255, 255, 255, 0.06); /* subtle circular background */
+  transition: transform 0.18s ease, background-color 0.18s ease;
+  text-decoration: none;
+  color: inherit; /* icons inherit color (page uses white) */
 }
-.socialimage:hover {
-  transform: scale(1.1);
+
+.social-links a:hover {
+  transform: translateY(-3px) scale(1.03);
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.socialimage {
+  display: inline-block; /* icon component */
+  width: 22px;
+  height: 22px;
+  line-height: 0; /* remove extra gap */
+  color: white; /* default icon color */
 }
 .right {
   width: 50%;
@@ -74,9 +84,8 @@
 .form-group {
   margin-bottom: 2rem;
   width: 100%;
-  max-width: 35rem;
+  max-width: 32rem;
 }
-
 label {
   display: block;
   font-size: 1rem;
@@ -94,6 +103,10 @@ input,textarea {
   background-color: rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
   transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 0 4px rgba(188,45,2,0.08);
 }
 
 input:focus,
@@ -140,7 +153,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff1100;
+  background-color: #ec483c;
   transform: translateY(-2px);
 }
 
@@ -194,13 +207,18 @@ button:active {
     gap: 1.5rem;
   }
 
+  .social-links a {
+    width: 40px;
+    height: 40px;
+  }
+
   .form-group {
     margin-bottom: 1.5rem;
   }
 
   .name-fields {
     flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
 
   input,
@@ -211,7 +229,7 @@ button:active {
   }
 
   button {
-    width: 40%;
+    width: 60%;
     padding: 0.4rem 1rem;
     font-size: 1.1rem;
     margin: 0 auto;
@@ -230,7 +248,7 @@ button:active {
   .heading {
     font-size: 2rem;
   }
-
+  
   .subheading {
     font-size: 1.3rem;
   }
@@ -243,10 +261,9 @@ button:active {
   .social-links {
     gap: 1rem;
   }
-
-  .socialimage {
-    height: 2rem;
-    padding: 0.2rem;
+  .social-links a {
+    width: 36px;
+    height: 36px;
   }
 
   .right {
@@ -269,5 +286,15 @@ button:active {
     padding: 0.4rem 1rem;
     font-size: 1rem;
     margin: 0% auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right input,
+  .right textarea {
+    width: 125% !important;
+    height: 2rem;
+    margin: 0 auto;
+    display: block;
   }
 }

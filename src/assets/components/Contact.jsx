@@ -1,10 +1,7 @@
 import React from "react";
 import "./Contact.css";
-import linkedin from "../images/linkedin.png";
-import github from "../images/github.png";
-import email from "../images/email.png";
-import twitter from "../images/twitter.png";
-import instagram from "../images/instagram.png";
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 const Contact = () => {
   const onSubmit = async (event) => {
@@ -44,41 +41,45 @@ const Contact = () => {
           </p>
 
           <span className="social-links">
-            <a
-              href="https://www.linkedin.com/in/jagadeeswar-ganisetti-000173375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="socialimage" src={linkedin} alt="LinkedIn" />
-            </a>
+              <a
+                href="https://www.linkedin.com/in/jagadeeswar-ganisetti-000173375?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <FaLinkedin className="socialimage" size={30} />
+              </a>
 
-            <a
-              href="https://github.com/jagadeesh0004"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="socialimage" src={github} alt="GitHub" />
-            </a>
+              <a
+                href="https://github.com/jagadeesh0004"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <FaGithub className="socialimage" size={30} />
+              </a>
 
-            <a href="mailto:ganisettijagadeeswar@gmail.com">
-              <img className="socialimage" src={email} alt="Email" />
-            </a>
+              <a href="mailto:ganisettijagadeeswar@gmail.com" aria-label="Email">
+                <MdEmail className="socialimage" size={30} />
+              </a>
 
-            <a
-              href="https://x.com/Jagadeeswarga?t=dDNY24EYCDSn9PH9lqBs_w&s=09"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="socialimage" src={twitter} alt="Twitter" />
-            </a>
+              <a
+                href="https://x.com/Jagadeeswarga?t=dDNY24EYCDSn9PH9lqBs_w&s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <FaTwitter className="socialimage" size={30} />
+              </a>
 
-            <a
-              href="https://www.instagram.com/jagadeesh_0_4/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="socialimage" src={instagram} alt="Instagram" />
-            </a>
+              <a
+                href="https://www.instagram.com/jagadeesh_0_4/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="socialimage" size={30} />
+              </a>
           </span>
         </span>
       </div>

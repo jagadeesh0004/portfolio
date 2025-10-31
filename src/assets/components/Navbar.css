@@ -45,9 +45,10 @@ hr {
     background: rgb(114, 127, 155);
     border-radius: 10px; 
 }
-
+@media (hover: hover) and (pointer: fine) {
 .navbar ul li a:hover{
     text-decoration: underline;
     color: white;
+}
 }
 

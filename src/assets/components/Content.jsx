@@ -1,21 +1,29 @@
-import React from 'react';
-import './Content.css';
-
+import React from "react";
+import "./Content.css";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-
-
+import Typewriter from "typewriter-effect";
 
 const Content = () => {
   return (
     <div className="content">
       <h1>Jagadeeswar</h1>
+
       <div className="role">
-        <h3>Web Developer</h3>
-        <h3 className='divider'>&emsp;|&emsp;</h3>
-        <h3>Junior Backend Dev</h3>
+        <h3>
+          <Typewriter
+            options={{
+              strings: [
+                "Web Developer | Junior Backend Dev",
+              ],
+              autoStart: true,
+              loop: true,
+              delay: 75,
+              deleteSpeed: 50,
+            }}
+          />
+        </h3>
       </div>
-      
 
       <hr className="line" />
 
@@ -32,7 +40,12 @@ const Content = () => {
           <FaLinkedin className="socialimg" size={30} />
         </a>
 
-        <a href="https://github.com/jagadeesh0004" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <a
+          href="https://github.com/jagadeesh0004"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+        >
           <FaGithub className="socialimg" size={30} />
         </a>
 

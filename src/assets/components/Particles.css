@@ -1,0 +1,10 @@
+.particles-container {
+  position: fixed;       /* Attach to viewport */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 0;            /* Background layer */
+  pointer-events: none;  /* Let user click through it */
+}
